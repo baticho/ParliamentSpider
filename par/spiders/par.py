@@ -12,7 +12,6 @@ class ParSpider(scrapy.Spider):
     names_page = LinkExtractor(restrict_xpaths='//div[@class="MPinfo"]/a')
 
     def parse(self, response):
-        #books_page_links = response.xpath('//h3/a/@href')
         names_page_links =  self.names_page.extract_links(response)
         yield from response.follow_all(names_page_links, self.parse_name)
 
