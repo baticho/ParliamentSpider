@@ -13,7 +13,7 @@ SPIDER_MODULES = ['par.spiders']
 NEWSPIDER_MODULE = 'par.spiders'
 FEED_EXPORT_ENCODING = 'utf-8'
 LOG_LEVEL = 'INFO'
-DOWNLOAD_DELAY = 7.5
+DOWNLOAD_DELAY = 10
 
 ITEM_PIPELINES = {
     'par.pipelines.ParPipeline': 100,
