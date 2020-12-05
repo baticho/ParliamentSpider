@@ -5,7 +5,7 @@ import sqlite3
 class ParPipeline:
 	conn = sqlite3.connect('names.db')
 	cursor = conn.cursor()
-	name_counter = place_counter = prof_counter = lang_counter = party_counter = 1
+	name_counter = 1
 	places, professions, languages, parties = [[], [], [], []]
 
 	def open_spider(self, spider):
