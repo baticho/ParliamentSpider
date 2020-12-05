@@ -114,3 +114,6 @@
 {"date": ["1953-07-26 00:00:00"], "email": ["kolyo.milev@parliament.bg"], "lang": [""], "name": ["KOLYO YORDANOV MILEV"], "party": ["BSP for Bulgaria"], "place": ["Rudnik, Bulgaria"], "prof": ["Engineer"]}
 {"date": ["1970-05-12 00:00:00"], "email": ["klavdya.gancheva@parliament.bg"], "lang": [""], "name": ["KLAVDIYA GEORGIEVA GRIGOROVA-GANCHEVA"], "party": ["PP GERB"], "place": ["Pleven, Bulgaria"], "prof": ["Engineer"]}
 {"date": ["1952-12-14 00:00:00"], "email": ["kiril.kalfin@parliament.bg"], "lang": [""], "name": ["KIRIL BOYANOV KALFIN"], "party": ["PP GERB"], "place": ["Gorna Grashtitsa, Bulgaria"], "prof": ["Jurist"]}
+{"name": ["EMIL MARINOV HRISTOV"], "date": ["1957-06-05 00:00:00"], "place": [","], "prof": [""], "lang": [""], "party": ["PP GERB"], "email": ["emil.hristov@parliament.bg"]}
+{"name": ["TSVETA VALCHEVA KARAYANCHEVA"], "date": ["1968-02-25 00:00:00"], "place": ["Bolyarovo, Bulgaria"], "prof": ["Engineer"], "lang": ["Russian"], "party": ["PP GERB"], "email": ["tsveta.karayancheva@parliament.bg"]}
+{"name": ["TSVETA VALCHEVA KARAYANCHEVA"], "date": ["1968-02-25 00:00:00"], "place": ["Bolyarovo, Bulgaria"], "prof": ["Engineer"], "lang": ["Russian"], "party": ["PP GERB"], "email": ["tsveta.karayancheva@parliament.bg"]}

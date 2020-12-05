@@ -2,13 +2,12 @@ import scrapy, re, datetime
 
 from scrapy.loader import ItemLoader
 from par.items import ParItem
-from scrapy.linkextractors import LinkExtractor
 from scrapy.utils.markup import remove_tags
 
 
 class ParSpider(scrapy.Spider):
     name = 'par2'
-    start_urls = ['https://www.parliament.bg/en/MP/2716']
+    start_urls = ['https://www.parliament.bg/en/MP/2797']
 
 
     def parse(self, response):
