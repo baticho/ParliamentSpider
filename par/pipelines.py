@@ -53,8 +53,8 @@ class ParPipeline:
 			self.cursor.execute(f"""insert into professions (profession) values ('{prof}')""")
 			if prof not in self.professions:
 				self.professions.append(prof)
-			self.cursor.execute(f"""insert into profession_to_name 
-			values ({self.name_counter}, (select distinct id from professions where profession = '{prof}'))""")
+				self.cursor.execute(f"""insert into profession_to_name 
+				values ({self.name_counter}, (select distinct id from professions where profession = '{prof}'))""")
 
 		for lang in langs:
 			if lang == '':
@@ -62,15 +62,15 @@ class ParPipeline:
 			self.cursor.execute(f"""insert into languages (language) values ('{lang}')""")
 			if lang not in self.languages:
 				self.languages.append(lang)
-			self.cursor.execute(f"""insert into language_to_name 
-			values ({self.name_counter}, (select distinct id from languages where language = '{lang}'))""")
+				self.cursor.execute(f"""insert into language_to_name 
+				values ({self.name_counter}, (select distinct id from languages where language = '{lang}'))""")
 
 		for party in parties:
 			self.cursor.execute(f"""insert into parties (party) values ('{party}')""")
 			if party not in self.parties:
 				self.parties.append(party)
-			self.cursor.execute(f"""insert into parties_to_name 
-			values ({self.name_counter}, (select distinct id from parties where party = '{party}'))""")
+				self.cursor.execute(f"""insert into parties_to_name 
+				values ({self.name_counter}, (select distinct id from parties where party = '{party}'))""")
 
 		self.cursor.execute(f"""insert into names 
 		(name, date, place_id, email) 
