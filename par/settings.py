@@ -37,12 +37,12 @@ FEEDS = {
     },
 }
 
-'''DOWNLOADER_MIDDLEWARES = {
+DOWNLOADER_MIDDLEWARES = {
     'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
     'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
 }
 
-ROTATING_PROXY_LIST = [
+'''ROTATING_PROXY_LIST = [
     '163.172.47.182:3128',
     '51.81.113.246:80',
 ]

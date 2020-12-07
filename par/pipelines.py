@@ -9,15 +9,10 @@ class ParPipeline:
 	places, professions, languages, parties = [[], [], [], []]
 
 	def open_spider(self, spider):
+		tables = ['names', 'places', 'professions', 'languages', 'parties', 'profession_to_name', 'language_to_name', 'parties_to_name']
 
-		self.cursor.execute('DROP TABLE names;')
-		self.cursor.execute('DROP TABLE places;')
-		self.cursor.execute('DROP TABLE professions;')
-		self.cursor.execute('DROP TABLE languages;')
-		self.cursor.execute('DROP TABLE parties;')
-		self.cursor.execute('DROP TABLE profession_to_name;')
-		self.cursor.execute('DROP TABLE language_to_name;')
-		self.cursor.execute('DROP TABLE parties_to_name;')
+		for table in tables:
+			self.cursor.execute(f'DROP TABLE if exists {table};')
 		self.conn.commit()
 
 	def process_item(self, item, spider):
@@ -41,10 +36,10 @@ class ParPipeline:
 
 		print(place)
 
-		self.cursor.execute(f"""insert into places
-		(town, country) 
-		values (?, ?)""", (place[0], place[1].strip()))
 		if place not in self.places:
+			self.cursor.execute(f"""insert into places
+					(town, country) 
+					values (?, ?)""", (place[0], place[1].strip()))
 			self.places.append(place)
 
 		for prof in profs:
